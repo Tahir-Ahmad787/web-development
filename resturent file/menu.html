@@ -3,88 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Our Menu</title>
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <center><h1>Our Menu</h1></center>
-    <center><p>Explore our delicious offerings below.</p></center>
-    <h3>Pizzas</h3>
-    <ul>
-        <li>Margherita - Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.</li>
-        <li>Pepperoni - Topped with pepperoni slices, tomato sauce, and mozzarella cheese.</li>
-        <li>Veggie - Loaded with bell peppers, onions, mushrooms, olives, and tomato sauce.</li>
-    </ul>
-    <h3>Pasta</h3>
-    <ul>
-        <li>Spaghetti Bolognese - Spaghetti pasta served with a rich meat sauce made from ground beef, tomatoes, and herbs.</li>
-        <li>Fettuccine Alfredo - Fettuccine pasta tossed in a creamy Alfredo sauce made with butter, heavy cream, and Parmesan cheese.</li>
-        <li>Penne Arrabbiata - Penne pasta in a spicy tomato sauce with garlic, red chili flakes, and olive oil.</li>
-    </ul>
-    <h3>Salads</h3>
-    <ul>
-        <li>Caesar Salad - Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.</li>
-        <li>Greek Salad - Mixed greens, tomatoes, cucumbers, olives, feta cheese, and Greek dressing.</li>
-        <li>Side Salad - A small salad with mixed greens, cherry tomatoes, and your choice of dressing.</li>
-    </ul>
-    <h3>Burgers</h3>
-    <ul>
-        <li>Beef Burger - Juicy beef patty with lettuce, tomato, and special sauce.</li>
-        <li>Chicken Burger - Grilled chicken breast with avocado and mayo.</li>
-        <li>Veggie Burger - Plant-based patty with fresh vegetables and vegan sauce.</li>
-    </ul>
-    <h3>Desserts</h3>
-    <ul>
-        <li>Cheesecake - Creamy New York-style cheesecake with a graham cracker crust.</li>
-        <li>Brownie - Fudgy chocolate brownie with a scoop of vanilla ice cream.</li>
-        <li>Ice Cream - A variety of flavors available daily.</li>
-    </ul>
+    <div class="page-wrap">
+        <header class="site-header">
+            <h1>Our Menu</h1>
+            <p>Explore delicious meals and easy ordering.</p>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact_us.html">Contact</a>
+                <a href="about_us.html">About</a>
+            </nav>
+        </header>
 
-     <center><h2>Select an item and ordering</h2></center>
-        <center><p>Click on the item to view details and place your order.</p></center>
-        <center><h3>Order Form</h3>
-        <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
-        <h4>Order Details</h4>
-        <label for="pizza">Pizza</label>
-        <select id="pizza" name="pizza">
-                <option value="margherita">Margherita</option>
-                <option value="pepperoni">Pepperoni</option>
-                <option value="veggie">Veggie</option>
-            </select><br>
-            <label for="pasta">Pasta</label>
-            <select id="pasta" name="pasta">
-                <option value="spaghetti">Spaghetti</option>
-                <option value="fettuccine">Fettuccine</option>
-                <option value="penne">Penne</option>
-            </select><br>
-            <label for="salad">Salad</label>
-            <select id="salad" name="salad">
-                <option value="caesar">Caesar</option>
-                <option value="greek">Greek</option>
-                <option value="side">Side</option>
-            </select> <br>
-        <label for="burger">Burger</label>
-        <select id="burger" name="burger">
-                <option value="beef">Beef</option>
-                <option value="chicken">Chicken</option>
-                <option value="veggie">Veggie</option>
-            </select><br>
-            <label for="dessert">Dessert</label>
-            <select id="dessert" name="dessert">
-                <option value="cheesecake">Cheesecake</option>
-                <option value="brownie">Brownie</option>
-                <option value="icecream">Ice Cream</option>
-            </select><br>
-        <input type="submit" value="Place Order">
-    </form></center>
-</form>
-<footer>
-        <p>&copy; 2026 Our Restaurant. All rights reserved.</p>
-    </footer>
+        <main>
+            <section class="menu-section">
+                <h2>Pizzas</h2>
+                <ul>
+                    <li>Margherita - Tomato sauce, mozzarella, basil.</li>
+                    <li>Pepperoni - Pepperoni, cheese, tomato sauce.</li>
+                    <li>Veggie - Peppers, onions, mushrooms, olives.</li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h2>Pasta</h2>
+                <ul>
+                    <li>none</li>
+                    <li>Spaghetti Bolognese - Rich meat sauce with herbs.</li>
+                    <li>Fettuccine Alfredo - Creamy butter, cheese sauce.</li>
+                    <li>Penne Arrabbiata - Spicy tomato sauce with garlic.</li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h2>Salads</h2>
+                <ul>
+                
+                    <li>Caesar Salad - Lettuce, croutons, Parmesan, dressing.</li>
+                    <li>Greek Salad - Tomatoes, cucumbers, olives, feta.</li>
+                    <li>Side Salad - Mixed greens with your choice of dressing.</li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h2>Burgers</h2>
+                <ul>
+                    
+                    <li>Beef Burger - Juicy beef patty with lettuce and sauce.</li>
+                    <li>Chicken Burger - Grilled chicken with mayo and avocado.</li>
+                    <li>Veggie Burger - Plant-based patty with fresh toppings.</li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h2>Desserts</h2>
+                <ul>
+                    
+                    <li>Cheesecake - Creamy cheesecake with graham crumb crust.</li>
+                    <li>Brownie - Warm chocolate brownie with ice cream.</li>
+                    <li>Ice Cream - Daily flavors available.</li>
+                </ul>
+            </section>
+
+            <section class="order-section">
+                <h2>Order Form</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone"><br><br>
+
+                    <label for="pizza">Pizza</label><br>
+                    <select id="pizza" name="pizza">
+                        <option value="none">None</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="veggie">Veggie</option>
+                    </select><br><br>
+
+                    <label for="pasta">Pasta</label><br>
+                    <select id="pasta" name="pasta">
+                        <option value="none">None</option>
+                        <option value="spaghetti">Spaghetti </option>
+                        <option value="fettuccine">Fettuccine</option>
+                        <option value="penne">Penne</option>
+                    </select><br><br>
+
+                    <label for="salad">Salad</label><br>
+                    <select id="salad" name="salad">
+                        <option value="none">None</option>
+                        <option value="caesar">Caesar</option>
+                        <option value="greek">Greek</option>
+                        <option value="side">Side</option>
+                    </select><br><br>
+
+                    <label for="burger">Burger</label><br>
+                    <select id="burger" name="burger">
+                        <option value="none">None</option>
+                        <option value="beef">Beef</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="veggie">Veggie</option>
+                    </select><br><br>
+
+                    <label for="dessert">Dessert</label><br>
+                    <select id="dessert" name="dessert">
+                        <option value="none">None</option>
+                        <option value="cheesecake">Cheesecake</option>
+                        <option value="brownie">Brownie</option>
+                        <option value="icecream">Ice Cream</option>
+                    </select><br><br>
+
+                    <button type="submit" class="button button-primary">Place Order</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Lecker Bites. All rights reserved.
+                powered by tahir ahmad
+            </p>
+        </footer>
+
+    </div>
 </body>
 </html>
