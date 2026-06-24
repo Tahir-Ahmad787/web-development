@@ -3,46 +3,705 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Lecker Bites</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-wrap">
-        <header class="site-header">
-            <h1>Lecker Bites</h1>
-            <p>Fresh food, warm service</p>
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="contact_us.html">Contact</a>
-                <a href="about_us.html">About</a>
-            </nav>
-        </header>
 
-        <main class="hero">
-            <h2>Welcome to our restaurant</h2>
-            <p>Enjoy authentic flavors, a cozy atmosphere, and friendly service.</p>
-            <div class="hero-buttons">
-                <a class="button button-primary" href="menu.html">View Menu</a>
-                <a class="button button-secondary" href="reservation.html">Book a Table</a>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            Lecker<span class="text-gold"> Bites</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservations">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary" href="#reservations">Reserve a table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="hero-heading">Savor the Taste of Elegance</h1>
+                    <p class="lead mb-4">Explore fine dining at its best with our curated menu of exquisite dishes prepared by world-class chefs using the freshest ingredients.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+                        <a href="#menu" class="btn btn-outline-primary">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/hero-pizza.svg" alt="pizza">
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
+    </section>
 
-        <section class="features">
-            <h3>Why Choose Us?</h3>
-            <ul>
-                <li>Fresh ingredients every day</li>
-                <li>Quick service and delivery</li>
-                <li>Comfortable dining space</li>
-            </ul>
-        </section>
+    <!-- About section -->
+    <section id="about" class="about-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Story</h2>
+                </div>
+            </div>
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Crafting Culinary Excellence Since 2026</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione veritatis beatae in vitae laudantium perferendis voluptas autem. Quo est beatae nulla temporibus optio! Pariatur obcaecati tempora ipsam saepe explicabo nemo.</p>
+                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda sequi optio!</p>
+                    <div class="row mt-4 gy-4">
+                        <div class="col-sm-4 col-6 feature-item text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h5>Fresh Ingredients</h5>
+                            <p>Locally sourced, seasonal produce</p>
+                        </div>
+                        <div class="col-sm-4 col-6 feature-item text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h5>Premium Dining</h5>
+                            <p>An unforgettable experience every visit.</p>
+                        </div>
+                        <div class="col-sm-4 col-12 feature-item text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h5>World-class Chefs</h5>
+                            <p>Masters of flavor from around the globe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="chef-image">
+                        <img src="images/chef.png" alt="chef image" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 Lecker Bites. All rights reserved.
-                powered by tahir ahmad
-            </p>
-        </footer>
-    </div>
+    <!-- menu section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="lead">Discover our tasty selection of dishes</p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills mb-4 justify-content-center flex-nowrap overflow-auto pb-2" id="menuTab" role="tablist" style="gap:8px; scrollbar-width:none;">
+                    <li class="nav-item flex-shrink-0" role="presentation">
+                        <button class="nav-link active" id="starters-tab" data-bs-toggle="pill" data-bs-target="#starters" type="button" role="tab" aria-controls="starters" aria-selected="true">Starters</button>
+                    </li>
+                    <li class="nav-item flex-shrink-0" role="presentation">
+                        <button class="nav-link" id="main-tab" data-bs-toggle="pill" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="false">Main Course</button>
+                    </li>
+                    <li class="nav-item flex-shrink-0" role="presentation">
+                        <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">Desserts</button>
+                    </li>
+                    <li class="nav-item flex-shrink-0" role="presentation">
+                        <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="menuTabContent">
+
+                    <!-- STARTERS -->
+                    <div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="starters-tab">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/wings.png" alt="Chicken Wings"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Chicken Wings (BBQ)</h5><span class="menu-item-price">Rs 460</span></div>
+                                        <p>Crispy BBQ wings marinated in smoky sauce, served with dipping sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/sticks.png" alt="Mozzarella Sticks"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Mozzarella Sticks</h5><span class="menu-item-price">Rs 380</span></div>
+                                        <p>Golden fried mozzarella sticks served with marinara dipping sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/clamari.png" alt="Calamari"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Crispy Calamari</h5><span class="menu-item-price">Rs 520</span></div>
+                                        <p>Lightly breaded calamari rings fried to perfection with lemon aioli.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/potatoes.png" alt="Loaded Fries"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Loaded Potato Fries</h5><span class="menu-item-price">Rs 350</span></div>
+                                        <p>Crispy fries topped with cheese sauce, jalapeños, and sour cream.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/salad.png" alt="Garden Salad"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Fresh Garden Salad</h5><span class="menu-item-price">Rs 320</span></div>
+                                        <p>A refreshing mix of seasonal greens, cherry tomatoes, and vinaigrette.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/soup.png" alt="Soup"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Cream of Mushroom Soup</h5><span class="menu-item-price">Rs 290</span></div>
+                                        <p>Rich, velvety mushroom soup served with toasted garlic bread.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAIN COURSE -->
+                    <div class="tab-pane fade" id="main" role="tabpanel" aria-labelledby="main-tab">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/pasta.png" alt="Pasta"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Grilled Chicken Pasta</h5><span class="menu-item-price">Rs 750</span></div>
+                                        <p>Fettuccine tossed in creamy Alfredo sauce with grilled chicken strips.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/pizza.png" alt="Pizza"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Margherita Pizza</h5><span class="menu-item-price">Rs 850</span></div>
+                                        <p>Classic pizza with fresh mozzarella, tomato sauce, and basil leaves.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/pizza 2.png" alt="BBQ Chicken Pizza"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>BBQ Chicken Pizza</h5><span class="menu-item-price">Rs 950</span></div>
+                                        <p>Smoky BBQ sauce, grilled chicken, red onions, and melted cheddar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/burger.png" alt="Burger"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Signature Beef Burger</h5><span class="menu-item-price">Rs 680</span></div>
+                                        <p>Juicy beef patty with lettuce, tomato, pickles, and special house sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/salmon.png" alt="Salmon"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Pan-Seared Salmon</h5><span class="menu-item-price">Rs 1100</span></div>
+                                        <p>Atlantic salmon fillet with lemon butter sauce and seasonal vegetables.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/bread.png" alt="Bread"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Garlic Bread Platter</h5><span class="menu-item-price">Rs 280</span></div>
+                                        <p>Freshly baked bread with herb garlic butter, served warm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESSERTS -->
+                    <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/cake.png" alt="Chocolate Lava Cake"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Chocolate Lava Cake</h5><span class="menu-item-price">Rs 490</span></div>
+                                        <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/cake2.png" alt="Red Velvet Cake"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Red Velvet Cake</h5><span class="menu-item-price">Rs 450</span></div>
+                                        <p>Moist red velvet layers with cream cheese frosting and a velvety finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/cake3.png" alt="Cheesecake"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>New York Cheesecake</h5><span class="menu-item-price">Rs 520</span></div>
+                                        <p>Classic dense cheesecake with a buttery graham cracker crust and berry compote.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/cake4.png" alt="Tiramisu"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Tiramisu</h5><span class="menu-item-price">Rs 480</span></div>
+                                        <p>Italian classic with espresso-soaked ladyfingers and mascarpone cream.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/icecream.png" alt="Ice Cream"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Artisan Ice Cream</h5><span class="menu-item-price">Rs 320</span></div>
+                                        <p>Three scoops of house-made artisan ice cream with your choice of toppings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/fruit.png" alt="Fruit Platter"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Fresh Fruit Platter</h5><span class="menu-item-price">Rs 380</span></div>
+                                        <p>Seasonal fresh fruits beautifully arranged with honey yogurt dip.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DRINKS -->
+                    <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/juice.png" alt="Orange Juice"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Fresh Orange Juice</h5><span class="menu-item-price">Rs 220</span></div>
+                                        <p>Chilled freshly squeezed orange juice served with a citrus slice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/juice2.png" alt="Mixed Juice"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Tropical Fruit Punch</h5><span class="menu-item-price">Rs 260</span></div>
+                                        <p>A refreshing blend of mango, pineapple, and passion fruit juices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/coffee.png" alt="Coffee"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Signature Latte</h5><span class="menu-item-price">Rs 280</span></div>
+                                        <p>Smooth espresso with steamed milk and your choice of flavor syrup.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/coffee2.png" alt="Cold Coffee"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Iced Caramel Coffee</h5><span class="menu-item-price">Rs 320</span></div>
+                                        <p>Cold brew coffee with caramel drizzle, milk foam, and ice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/drink.png" alt="Mocktail"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Sunset Mocktail</h5><span class="menu-item-price">Rs 340</span></div>
+                                        <p>A vibrant non-alcoholic blend of grenadine, orange juice, and soda water.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="menu-item">
+                                    <div class="menu-item-img"><img src="images/menu/water.png" alt="Water"></div>
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title"><h5>Sparkling Water</h5><span class="menu-item-price">Rs 120</span></div>
+                                        <p>Chilled sparkling mineral water served with a slice of lemon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reservations" class="reservation-section">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">Make a Reservation</h2>
+                    <p class="lead text-white">Secure your table for an unforgettable experience</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="reservation-card">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" placeholder="Number of Guests" min="1">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Special Requests (optional)"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <button type="submit" class="btn btn-primary px-5">Reserve Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Gallery</h2>
+                    <p class="lead">A glimpse into our world of fine dining</p>
+                </div>
+            </div>
+            <div class="row g-3">
+
+                <!-- Large image - left -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-item gallery-item-tall">
+                        <img src="images/gallery/interior.png" alt="Restaurant Interior">
+                        <div class="gallery-item-overlay">
+                            <h5>Our Interior</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column - 2 stacked -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-3 h-100">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="gallery-item gallery-item-half">
+                                <img src="images/gallery/signature.png" alt="Signature Dish">
+                                <div class="gallery-item-overlay">
+                                    <h5>Signature Dish</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="gallery-item gallery-item-half">
+                                <img src="images/gallery/bbq.png" alt="BBQ Special">
+                                <div class="gallery-item-overlay">
+                                    <h5>BBQ Special</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom row - 3 equal -->
+                <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="images/gallery/burger.png" alt="Gourmet Burger">
+                        <div class="gallery-item-overlay">
+                            <h5>Gourmet Burger</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="images/gallery/dessert.png" alt="Sweet Desserts">
+                        <div class="gallery-item-overlay">
+                            <h5>Sweet Desserts</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="images/gallery/pizza.png" alt="Artisan Pizza">
+                        <div class="gallery-item-overlay">
+                            <h5>Artisan Pizza</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonial-section position-relative overflow-hidden">
+        <div class="floating-icons-wrapper" aria-hidden="true">
+            <i class="fas fa-utensils floating-icon" style="left:10%; animation-delay:0s;"></i>
+            <i class="fas fa-wine-glass floating-icon" style="left:20%; animation-delay:3s;"></i>
+            <i class="fas fa-heart floating-icon" style="left:80%; animation-delay:6s;"></i>
+            <i class="fas fa-star floating-icon" style="left:90%; animation-delay:9s;"></i>
+        </div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">What Our Guests Say</h2>
+                    <p class="lead">Experiences from our valued customers</p>
+                </div>
+            </div>
+            <div id="testimonialcarousel" class="carousel slide">
+                <div class="carousel-inner pb-5">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <div class="testimonial-card shadow">
+                                        <img src="images/client1.png" alt="Ahmad" class="profile-img">
+                                        <h5 class="mb-2">Ahmad</h5>
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"A perfect flavour and modern presentation. The atmosphere is luxurious and inviting. We'll definitely be back soon!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <div class="testimonial-card shadow">
+                                        <img src="images/client2.png" alt="Ali" class="profile-img">
+                                        <h5 class="mb-2">Ali</h5>
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"Exceptional food quality and world-class service. Every dish was a masterpiece. Highly recommend Lecker Bites!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <div class="testimonial-card shadow">
+                                        <img src="images/client3.png" alt="Mahir" class="profile-img">
+                                        <h5 class="mb-2">Mahir</h5>
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"The best dining experience in the city! Beautiful ambiance, amazing food, and very attentive staff. 10/10!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialcarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialcarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="lead">We'd love to hear from you</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d574.9572187808043!2d74.01170956357109!3d32.56354770736186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1782125473076!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lecker Bites Location"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h3 class="mb-4">Get in Touch</h3>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Address</h5>
+                                <p>12 Luxury Lane, Khokhar Gharbi, Gujrat, 50700</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+92-340-6138922</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@leckerbites.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Hours</h5>
+                                <p>Monday – Sunday &nbsp; 12pm – 12am</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-md-6">
+                    <h3 class="footer-title">Lecker <span class="text-gold">Bites</span></h3>
+                    <p class="footer-description">Experience the art of fine dining with our exquisite cuisine, impeccable service, and elegant atmosphere.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-follow mb-3">Follow Us</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copy">© 2026 Lecker Bites. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        AOS.init({ duration: 1000, once: true });
+
+        // Close navbar on link click (mobile)
+        document.querySelectorAll('.nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                const navbarCollapse = document.getElementById('navbarSupportedContent');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                    if (bsCollapse) bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
